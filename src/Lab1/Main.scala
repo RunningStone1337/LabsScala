@@ -1,4 +1,6 @@
-import HigherOrder.{multiply, testAnonymousNTimes, testNTimes}
+package Lab1
+
+import Lab1.HigherOrder.multiply
 
 object Main {
   def main(args: Array[String]) = {
@@ -7,14 +9,14 @@ object Main {
     println()
     println("Functions.testRectangleCurried(3, 4) " + Functions.testRectangleCurried(3, 4))
     println()
-    println("Functions.testRectangleUc(3, 4) " +Functions.testRectangleUc(3, 4))
+    println("Functions.testRectangleUc(3, 4) " + Functions.testRectangleUc(3, 4))
     println()
     println("HiOrder:")
-    println("testNTimes(multiply,4,6,2) "+HigherOrder.testNTimes(multiply,4,6,2))
-    println("testAnonymousNTimes(4,6,2) "+HigherOrder.testAnonymousNTimes(4,6,2))
+    println("testNTimes(multiply,4,6,2) " + HigherOrder.testNTimes(multiply, 4, 6, 2))
+    println("testAnonymousNTimes(4,6,2) " + HigherOrder.testAnonymousNTimes(4, 6, 2))
     println()
     println("PatternMatching:")
-    println("testIntToString(1) "+PatternMatching.testIntToString(1))
+    println("testIntToString(1) " + PatternMatching.testIntToString(1))
     println("testIntToString(5) " + PatternMatching.testIntToString(5))
     println()
     println("testIsMaxAndMoritz(\"Max\") " + PatternMatching.testIsMaxAndMoritz("Max"))
@@ -23,15 +25,15 @@ object Main {
     println("testIsEven(1) " + PatternMatching.testIsEven(1))
     println("testIsEven(4) " + PatternMatching.testIsEven(4))
     println()
-    println("testWinsA(PatternMatching.Rock,PatternMatching.Scissor) " + PatternMatching.testWinsA(PatternMatching.Rock,PatternMatching.Scissor))
-    println("testWinsA(PatternMatching.Scissor,PatternMatching.Scissor) " + PatternMatching.testWinsA(PatternMatching.Scissor,PatternMatching.Scissor))
-    println("testWinsA(PatternMatching.Paper,PatternMatching.Scissor) " +  PatternMatching.testWinsA(PatternMatching.Paper,PatternMatching.Scissor))
+    println("testWinsA(PatternMatching.Rock,PatternMatching.Scissor) " + PatternMatching.testWinsA(PatternMatching.Rock, PatternMatching.Scissor))
+    println("testWinsA(PatternMatching.Scissor,PatternMatching.Scissor) " + PatternMatching.testWinsA(PatternMatching.Scissor, PatternMatching.Scissor))
+    println("testWinsA(PatternMatching.Paper,PatternMatching.Scissor) " + PatternMatching.testWinsA(PatternMatching.Paper, PatternMatching.Scissor))
     println()
-    println("extractMammalWeight(PatternMatching.Mammal(\"cat\",PatternMatching.Meat,3)) " + PatternMatching.extractMammalWeight(PatternMatching.Mammal("cat",PatternMatching.Meat,3)))
-    println("extractMammalWeight(PatternMatching.Bird(\"bird\",PatternMatching.Vegetables)) " + PatternMatching.extractMammalWeight(PatternMatching.Bird("bird",PatternMatching.Vegetables)))
+    println("extractMammalWeight(PatternMatching.Mammal(\"cat\",PatternMatching.Meat,3)) " + PatternMatching.extractMammalWeight(PatternMatching.Mammal("cat", PatternMatching.Meat, 3)))
+    println("extractMammalWeight(PatternMatching.Bird(\"bird\",PatternMatching.Vegetables)) " + PatternMatching.extractMammalWeight(PatternMatching.Bird("bird", PatternMatching.Vegetables)))
     println()
-    println("testUpdateFood(PatternMatching.Mammal(\"cat\",PatternMatching.Meat,3)) " + PatternMatching.testUpdateFood(PatternMatching.Mammal("cat",PatternMatching.Meat,3)))
-    println("testUpdateFood(PatternMatching.Fish(\"fish\",PatternMatching.Meat)) " + PatternMatching.testUpdateFood(PatternMatching.Fish("fish",PatternMatching.Meat)))
+    println("testUpdateFood(PatternMatching.Mammal(\"cat\",PatternMatching.Meat,3)) " + PatternMatching.testUpdateFood(PatternMatching.Mammal("cat", PatternMatching.Meat, 3)))
+    println("testUpdateFood(PatternMatching.Fish(\"fish\",PatternMatching.Meat)) " + PatternMatching.testUpdateFood(PatternMatching.Fish("fish", PatternMatching.Meat)))
     println()
     println("Classes:")
     println("Food.apply(\"Meat\") " + CLasses.Food.apply("Meat"))
